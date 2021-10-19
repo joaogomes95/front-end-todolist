@@ -1,5 +1,5 @@
 const Api = {
-    apiUrl: 'http://localhost:3002/todo',
+    apiUrl: 'https://backend-todolist-blue.herokuapp.com/todo',
     fetchGetAll: () => fetch(Api.apiUrl),
     fetchGetById: id => fetch(`${Api.apiUrl}/${id}`),
     fetchPost: (todo) => {

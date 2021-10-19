@@ -65,12 +65,12 @@ const Edicao = (props) => {
                     type="text"
                     value={todo.nome}
                     className="form-control"
-                    name="titulo"
+                    name="nome"
                     id="floatingInput"
                     placeholder="Digite o Titulo"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingInput">Titulo</label>
+                  <label htmlFor="floatingInput">Nome</label>
                 </div>
               </div>
               <div className="col">
@@ -84,7 +84,7 @@ const Edicao = (props) => {
                     placeholder="Digite a data limite para esta tarefa"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingprazo">Prazo</label>
+                  <label htmlFor="floatingInput">Prazo</label>
                 </div>
               </div>
             </div>
