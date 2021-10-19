@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Api from "../../api/api";
+import { Link } from 'react-router-dom';
 
 const Edicao = (props) => {
   const _id = props.match.params.id;
@@ -131,7 +132,9 @@ const Edicao = (props) => {
                 <button className="btn btn-success" type="submit">
                   Concluir
                 </button>
-                <button className="btn btn-outline-default">Voltar</button>
+                <Link to="/">
+                  <button className="btn btn-outline-default" to="/">Voltar</button>
+                </Link>
               </div>
             </div>
             </div>
@@ -143,3 +146,4 @@ const Edicao = (props) => {
 };
 
 export default Edicao;
+

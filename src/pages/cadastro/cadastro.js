@@ -1,6 +1,7 @@
 import React from 'react'
 import './cadastro.css';
 import Api from '../../api/api';
+import { Link } from 'react-router-dom';
 
 const Cadastro = (props) => {
   const history = props.history;
@@ -71,9 +72,9 @@ const Cadastro = (props) => {
               <div className="col">
                 <div className="form-floating">
                   <select className="form-control" name="status" id="floatingstatus" placeholder="Escolha o status da tarefa!">
-                  <option value="junior">Fazer</option>
-                    <option value="pleno">Fazendo</option>
-                    <option value="senior">Feito</option>
+                  <option value="fazer">Fazer</option>
+                    <option value="fazendo">Fazendo</option>
+                    <option value="feito">Feito</option>
                   </select>
                   <label htmlFor="floatingInput">Status</label>
                 </div>
@@ -90,7 +91,9 @@ const Cadastro = (props) => {
             <div className="row">
               <div className="col">
                 <button className="btn btn-success" type="submit">Enviar</button>
-                <button className="btn btn-outline-default">Voltar</button>
+                <Link to="/">
+                <button className="btn btn-outline-default" to="/">Voltar</button>
+                </Link>
               </div>
             </div>
             </div>
@@ -102,3 +105,5 @@ const Cadastro = (props) => {
 }
 
 export default Cadastro
+
+
