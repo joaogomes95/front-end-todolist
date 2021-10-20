@@ -108,8 +108,7 @@ const Edicao = (props) => {
                   <select value={todo.status}
                     className="form-control"
                     name="status"
-                    id="floatingstatus"
-                    value={todo.status}
+                    id="floatingstatus"                    
                     onChange={handleFieldsChange}
                     >
                     <option value="Fazer">Fazer</option>
@@ -123,9 +122,20 @@ const Edicao = (props) => {
 
             <div className="col">
                 <div className="form-floating mb-3">
-                  <input type="text" className="form-control" name="prioridade" id="floatingInput" placeholder="Digite a prioridade da tarefa"/>
+                  <select className="form-control" value={todo.prioridade} name="prioridade" id="floatingInput" onChange={handleFieldsChange} placeholder="Digite a prioridade da tarefa">
+                  <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                  </select>
                   <label htmlFor="floatingInput">Prioridade</label>
                 </div>
+              </div> 
+
+            {/* <div className="col">
+                <div className="form-floating mb-3">
+                  <input type="text" className="form-control" name="prioridade" id="floatingInput" placeholder="Digite a prioridade da tarefa"/>
+                  <label htmlFor="floatingInput">Prioridade</label>
+                </div> */}
 
             <div className="row">
               <div className="col">
@@ -136,7 +146,7 @@ const Edicao = (props) => {
                   <button className="btn btn-outline-default" to="/">Voltar</button>
                 </Link>
               </div>
-            </div>
+            {/* </div> */}
             </div>
           </form>
         </div>

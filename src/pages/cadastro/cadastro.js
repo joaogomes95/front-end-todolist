@@ -78,16 +78,27 @@ const Cadastro = (props) => {
                   </select>
                   <label htmlFor="floatingInput">Status</label>
                 </div>
-              </div>    
+              </div>   
 
               <div className="col">
                 <div className="form-floating mb-3">
-                  <input type="text" className="form-control" name="prioridade" id="floatingInput" placeholder="Digite a prioridade da tarefa"/>
+                  <select className="form-control" name="prioridade" id="floatingInput" placeholder="Digite a prioridade da tarefa">
+                  <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                  </select>
                   <label htmlFor="floatingInput">Prioridade</label>
                 </div>
+              </div> 
+
+              {/* <div className="col">
+                <div className="form-floating mb-3">
+                  <input type="text" className="form-control" name="prioridade" id="floatingInput" placeholder="Digite a prioridade da tarefa"/>
+                  <label htmlFor="floatingInput">Prioridade</label>
+                </div> */}
 
 
-            </div>
+            {/* </div> */}
             <div className="row">
               <div className="col">
                 <button className="btn btn-success" type="submit">Enviar</button>
