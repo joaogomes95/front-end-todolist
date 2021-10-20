@@ -36,7 +36,8 @@ const TodoView = (props) => {
   return (
     <div className="container flex-grow-1">
       <div className="row">
-        <div className="col">
+        <div className="col"> 
+          <label>Nome</label>         
           <h1 className="text-center mt-4">{todo.nome}</h1>
           <h2 className="text-center">{todo.descricao}</h2>
           <h4 className="text-center">{todo.prioridade}</h4>

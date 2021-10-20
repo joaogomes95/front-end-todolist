@@ -5,7 +5,7 @@ const Card = (props) => {
   const todo = props.data;
   return (
     <Link to={`/view/${todo._id}`} className="col">
-      <div className="card text-white bg-primary mb-3" style={{maxHeight: 20 + 'rem'}}>
+      <div className="card text-white bg-primary mb-3 flex-grow-1" style={{maxHeight: 20 + 'rem'}}>
             <div className="card-header">{todo.nome}</div>
             <div className="card-body">  
                 <label>Descrição:</label>            

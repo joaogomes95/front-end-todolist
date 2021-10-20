@@ -47,7 +47,7 @@ const Edicao = (props) => {
   };
 
   return (
-    <div className="container cadastro">
+    <div className="container cadastro flex-grow-1" >
       <div className="card mt-4">
         <div className="card-title">
           <div className="row">
@@ -60,7 +60,7 @@ const Edicao = (props) => {
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col">
-                <div className="form-floating mb-3">
+                <div className="form-floating mb-3">                  
                   <input
                     type="text"
                     value={todo.nome}
@@ -112,9 +112,9 @@ const Edicao = (props) => {
                     value={todo.status}
                     onChange={handleFieldsChange}
                     >
-                    <option value="junior">Fazer</option>
-                    <option value="pleno">Fazendo</option>
-                    <option value="senior">Feito</option>
+                    <option value="Fazer">Fazer</option>
+                    <option value="Fazendo">Fazendo</option>
+                    <option value="Feito">Feito</option>
                   </select>
                   <label htmlFor="floatingstatus">Status</label>
                 </div>
